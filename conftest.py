@@ -21,11 +21,11 @@ naveenautomationlabs_url = "https://naveenautomationlabs.com/opencart/"
 @pytest.fixture(scope="class", autouse=True)
 def browser_setup(request):
     global driver
-    service = Service(ChromeDriverManager().install())
-    chrome_options = Options()
+    # service = Service(ChromeDriverManager().install())
+    chrome_options = webdriver.ChromeOptions()
     chrome_options.add_experimental_option("detach", True)
     # Pass the Service instance to webdriver.Chrome()
-    driver = webdriver.Chrome(service=service, options=chrome_options)
+    driver = webdriver.Chrome(options=chrome_options)
     request.cls.driver = driver
     request.cls.driver.maximize_window()
 
