@@ -1,0 +1,20 @@
+{
+    "orangehrm": {
+        "Username": "Admin",
+        "Password": "admin123",
+        "emp_name": "a",
+        "emp_username": "shirisha",
+        "emp_password": "shirisha@123",
+        "swag_username": "standard_user",
+        "swag_password": "secret_sauce"
+    },
+    "naveenautomationlabs": {
+        "email_id": "shirisha7143@gmail.com",
+        "password": "Shirisha@123",
+        "emp_name": "a",
+        "emp_username": "shirisha",
+        "emp_password": "shirisha@123",
+        "swag_username": "standard_user",
+        "swag_password": "secret_sauce"
+    }
+}
