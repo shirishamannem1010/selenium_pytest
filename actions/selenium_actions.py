@@ -8,7 +8,7 @@ class Selenium_Actions:
         self.driver = driver
 
     def webelement_click(self, locator):
-        WebDriverWait(self.driver,3).until(EC.element_to_be_clickable(locator)).click()
+        WebDriverWait(self.driver,15).until(EC.element_to_be_clickable(locator)).click()
 
     def webelement_send_keys(self, locator, text):
         WebDriverWait(self.driver, 3).until(EC.element_to_be_clickable(locator)).send_keys(text)

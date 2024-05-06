@@ -13,8 +13,16 @@
         "password": "Shirisha@123",
         "emp_name": "a",
         "emp_username": "shirisha",
-        "emp_password": "shirisha@123",
+        "emp_password": "shirisha@123"
+        
+    },
+    "swaglabs": {
         "swag_username": "standard_user",
-        "swag_password": "secret_sauce"
+        "swag_password": "secret_sauce",
+        "first_name":"shirisha",
+        "last_name":"mannem",
+        "postal_code":"508254",
+        "username":"standard_user",
+        "incorrect_password":"shirisha"
     }
 }

@@ -1,0 +1,18 @@
+{
+    "username" : "demouser1@gmail.com" ,
+    "password" : "DemoUser@56" ,
+    "invalid_username":"demouser1@gmail.com",
+    "invalid_password":"demouser@",
+
+    "moreoptions": [
+        "Upgrade to Pro",
+        "Settings",
+        "Help",
+        "App Update",
+        "Send Feedback"
+    ],
+    "searchdata" : "sweets",
+    "title" : "Strong Tea",
+    "ingredients" : "Strong Milk, Tea Powder, Sugar, Elachi, Ginger",
+    "instructions" : "Boil milk, add Tea powder and sugar, after 2 minutes add elachi and ginger, stir well and serve hot"
+}
