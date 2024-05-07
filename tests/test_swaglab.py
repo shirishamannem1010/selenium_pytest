@@ -26,8 +26,6 @@ class TestSwagLab:
         self.swaglablogin.logout()
         assert swag_base_url == self.driver.current_url
         print("-------------Logout Successfully-----------------")
-        
-   
 
     def test_invalid_login(self,user_data) :
         print("-------------Test Login with invalid credentials-----------------")

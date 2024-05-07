@@ -1,3 +1,20 @@
 {
-    "username":"123"
+  "list_users":"/users?page=2",
+  "single_user":"/users",
+  "update_user":"/users/2",
+  "register_user":"/register",
+  "create_user":{
+    
+        "name": "morpheus",
+        "job": "leader"
+    
+  },
+  "update_user_details":{
+      "name": "shirisha",
+      "job": "leader"
+  },
+  "register_user_details":{
+    "email": "eve.holt@reqres.in",
+    "password": "pistol"
+  }
 }

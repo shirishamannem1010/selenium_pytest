@@ -265,3 +265,31 @@ def mobile_data() :
     with open("./data/mobiledata.json","r") as file :
         data = json.load(file)
     return data;
+# Ui automation configuration 
+#this fixture will provide the data in API section in config file
+@pytest.fixture()
+def read_config_api(api_path=config_path, section='API') :
+    parser = configparser.ConfigParser();
+    parser.read(api_path, encoding='utf-8');
+    if parser.has_section(section):
+        config = dict(parser.items(section));
+    else:
+        raise ValueError(f"Section '{section}' not found in the config file.");
+    return config;
+
+#this fixture will read the data from the json file for the API section
+@pytest.fixture()
+def api_data() :
+    with open("./data/api_data.json", "r") as file :
+        data = json.load(file);
+    return data;
+
+
+#this fixture will provide the booking id for the API
+@pytest.fixture()
+def post_user_details(api_data,read_config_api) :
+    api_config = read_config_api
+    response = requests.post(api_config["api_url"] + api_config["base_endpoint"]+"/users/2",
+                             json = api_data.get("name"))
+    assert response.status_code == 200 , f"Failed to create booking. Status  code : {response.status_code}"
+    return response.json().get("id" ,'')
